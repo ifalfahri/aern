@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "AernStore",
-  description: "AernStore merupakan sebuah website dari toko online yang menjual berbagai macam barang dengan motto #SahabatBelanjaHemat.",
+  description: "AernStore merupakan sebuah website dari toko online yang menjual berbagai macam barang dengan harga terjangkau dengan mottonya #SahabatBelanjaHemat.",
 };
 
 export default function RootLayout({
@@ -28,7 +28,9 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        </body>
     </html>
   );
 }

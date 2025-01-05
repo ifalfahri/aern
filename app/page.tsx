@@ -1,8 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
 import { LoadingScreen } from '@/components/loading-screen'
+import { Navbar } from '@/components/navbar'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -18,7 +18,9 @@ export default function Home() {
 
   return (
     <div className="max-w-screen min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20">
-      <motion.div
+      <Navbar />
+      
+      {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -53,7 +55,7 @@ export default function Home() {
             <p className="text-center text-muted-foreground">
               Aldo masih capek. <a href="https://github.com/ifalfahri" className='text-primary'>#SaveAldo</a>
             </p>
-      </motion.div>
+      </motion.div> */}
     </div>
   )
 }
