@@ -109,7 +109,7 @@ export default function FeedbackTabs({ children }: { children: React.ReactNode }
     }
   
     return (
-      <div className="w-full max-w-3xl mx-auto px-8 sm:px-6 lg:px-8">
+      <div className="w-full max-w-3xl mx-auto px-8 sm:px-6 lg:px-8 z-10">
         <div className="flex space-x-1 rounded-lg bg-muted p-1 mb-4" role="tablist" aria-orientation="horizontal">
           <Link href="/feedback/rating" className={`flex-1 ${pathname === '/feedback/rating' ? 'bg-background text-foreground' : ''} px-3 py-1.5 text-sm font-medium text-center rounded-md transition-all`} role="tab" aria-current={isRatingTab ? "page" : undefined}>
             Rating

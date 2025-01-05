@@ -2,7 +2,7 @@ import { FaInstagram, FaWhatsapp, FaFacebook } from 'react-icons/fa'
 
 export function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 w-full">
+    <footer className="absolute bottom-0 left-0 w-full">
       <div className="container mx-auto max-w-3xl px-4 py-4">
         <div className="flex flex-col items-center justify-center space-y-2">
           <div className="flex items-center space-x-4">
