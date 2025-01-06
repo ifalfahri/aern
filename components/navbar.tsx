@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import AernStoreLogo from "./icons/aernstore";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -15,8 +16,8 @@ export function Navbar() {
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href="/" className="flex items-center space-x-3">
-          <img src="aernstore.svg" className="h-8" alt="AernStore Logo"/>
+        <Link href="/" className="flex items-center w-10 h-10 space-x-3">
+          <AernStoreLogo />
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0">
           <button type="button" className="text-white bg-primary hover:bg-primary/70 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-primary dark:focus:ring-primary/70">

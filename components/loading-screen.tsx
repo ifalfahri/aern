@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Aernime from './icons/aernime'
 
 export function LoadingScreen() {
   return (
@@ -14,12 +15,7 @@ export function LoadingScreen() {
           ease: [0, 0.71, 0.2, 1.01]
         }}
       >
-        <img
-          src="/AernStoreV.svg"
-          alt="AernStore"
-          width={300}
-          height={300}
-        />
+        <Aernime />
       </motion.div>
       <motion.div
         className="absolute inset-0 z-0"
