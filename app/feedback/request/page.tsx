@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function RequestPage() {
   return (
     <div className="max-h-screen mb-6 text-center">
-      <p className="text-muted-foreground">
+      <p className="text-muted-foreground text-sm md:text-base">
         Ada barang yang kamu ingin kami menjualnya? Silahkan ketikkan requestnya di bawah ini.
       </p>
     </div>

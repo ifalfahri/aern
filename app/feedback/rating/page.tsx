@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function RatingPage() {
   return (
     <div className="max-h-screen mb-6 text-center">
-      <p className="text-muted-foreground">
+      <p className="text-muted-foreground text-sm md:text-base ">
         Silahkan berikan penilaian dan keluh kesah anda. Tenang, pengaduan ini bersifat anonim. Nama anda tidak akan terlihat oleh kami.
       </p>
     </div>
