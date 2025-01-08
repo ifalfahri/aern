@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const ShuffleHero = () => {
   return (
-    <section id="home" className="w-full h-screen mt-16 md:mt-8 px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-7xl mx-auto">
+    <section id="home" className="w-full h-screen pt-28 md:pt-20 px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-7xl mx-auto">
       <div>
         <span className="block mb-4 text-sm md:text-md text-primary font-medium">
           #SahabatBelanjaHemat
@@ -15,7 +16,9 @@ const ShuffleHero = () => {
         <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
         Kami menyediakan berbagai macam produk yang berkualitas dengan harga yang terjangkau. Kami juga menyediakan layanan reseller untuk anda yang ingin berjualan tanpa harus mengeluarkan modal yang besar.
         </p>
+        <Link href="https://wa.me/6282334039853">
         <Button>Gabung Reseller</Button>
+        </Link>
       </div>
       <ShuffleGrid />
     </section>
