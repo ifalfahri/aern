@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
@@ -125,24 +125,26 @@ const generateSquares = () => {
 };
 
 const ShuffleGrid = () => {
-  const timeoutRef = useRef<any>(null);
-  const [squares, setSquares] = useState(generateSquares());
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [squares, setSquares] = useState(() => generateSquares());
+
+  const shuffleSquares = useCallback(() => {
+    setSquares(generateSquares());
+    timeoutRef.current = setTimeout(shuffleSquares, 3000);
+  }, []);
 
   useEffect(() => {
     shuffleSquares();
-
-    return () => clearTimeout(timeoutRef.current);
-  }, []);
-
-  const shuffleSquares = () => {
-    setSquares(generateSquares());
-
-    timeoutRef.current = setTimeout(shuffleSquares, 3000);
-  };
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, [shuffleSquares]);
 
   return (
     <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
-      {squares.map((sq) => sq)}
+      {squares}
     </div>
   );
 };
