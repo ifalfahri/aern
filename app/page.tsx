@@ -4,6 +4,7 @@ import { LoadingScreen } from "@/components/loading-screen";
 import { Navbar } from "@/components/navbar";
 import ShuffleHero from "@/components/shuffle-hero";
 import { useEffect, useState } from "react";
+import { BouncyCardsFeatures } from "@/components/bouncy-cards-features";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,10 +19,12 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-primary/20 to-secondary/20">
+    <main className="bg-[#ff8dd3]">
       <Navbar />
-
+      <div className="bg-[url('https://res.cloudinary.com/dyjxcujz4/image/upload/v1717142252/layered-waves-haikei_7_olvnqc.svg')] bg-cover">
       <ShuffleHero />
-    </div>
+      </div>
+      <BouncyCardsFeatures />
+    </main>
   );
 }
