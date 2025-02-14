@@ -10,10 +10,10 @@ const ShuffleHero = () => {
         <span className="block mb-4 text-sm md:text-md text-primary font-medium">
           #SahabatBelanjaHemat
         </span>
-        <h3 className="text-4xl md:text-6xl text-black font-extrabold">
-          Aern Store hadir untuk anda
+        <h3 className="text-4xl md:text-6xl text-[#ff8dd3] font-extrabold">
+          Aern Store <span className="text-[#ffabde]">hadir untuk anda</span>
         </h3>
-        <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
+        <p className="text-base md:text-lg text-zinc-600 my-4 md:my-6">
         Kami menyediakan berbagai macam produk yang berkualitas dengan harga yang terjangkau. Kami juga menyediakan layanan reseller untuk anda yang ingin berjualan tanpa harus mengeluarkan modal yang besar.
         </p>
         <Link href="https://wa.me/6282334039853">
