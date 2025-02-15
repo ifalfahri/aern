@@ -1,7 +1,5 @@
 const AernStoreLogo = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
-    width="512"
-    height="512"
     viewBox="0 0 512 512"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
