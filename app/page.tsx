@@ -19,12 +19,12 @@ export default function Home() {
   }
 
   return (
-    <main className="bg-[#ff8dd3]">
+    <div className="bg-[#ff8dd3]">
       <Navbar />
       <div className="bg-[url('https://res.cloudinary.com/dyjxcujz4/image/upload/v1717142252/layered-waves-haikei_7_olvnqc.svg')] bg-cover">
       <ShuffleHero />
       </div>
       <BouncyCardsFeatures />
-    </main>
+    </div>
   );
 }
