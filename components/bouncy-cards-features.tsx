@@ -18,7 +18,7 @@ export const BouncyCardsFeatures = () => {
         </motion.button>
       </div>
       <div className="mb-4 grid grid-cols-12 gap-4">
-        <BounceCard className="col-span-12 md:col-span-4">
+        <BounceCard className="col-span-12 md:col-span-4 text-violet-400">
           <CardTitle>Mudah</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-violet-400 to-indigo-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <span className="block text-center font-semibold text-indigo-50">
@@ -26,7 +26,7 @@ export const BouncyCardsFeatures = () => {
             </span>
           </div>
         </BounceCard>
-        <BounceCard className="col-span-12 md:col-span-8">
+        <BounceCard className="col-span-12 md:col-span-8 text-orange-400">
           <CardTitle>Murah</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-amber-400 to-orange-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <span className="block text-center font-semibold text-orange-50">
@@ -36,7 +36,7 @@ export const BouncyCardsFeatures = () => {
         </BounceCard>
       </div>
       <div className="grid grid-cols-12 gap-4">
-        <BounceCard className="col-span-12 md:col-span-8">
+        <BounceCard className="col-span-12 md:col-span-8 text-emerald-400">
           <CardTitle>Ramah</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-green-400 to-emerald-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <span className="block text-center font-semibold text-emerald-50">
@@ -44,7 +44,7 @@ export const BouncyCardsFeatures = () => {
             </span>
           </div>
         </BounceCard>
-        <BounceCard className="col-span-12 md:col-span-4">
+        <BounceCard className="col-span-12 md:col-span-4 text-red-400">
           <CardTitle>Lengkap</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-pink-400 to-red-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <span className="block text-center font-semibold text-red-50">
