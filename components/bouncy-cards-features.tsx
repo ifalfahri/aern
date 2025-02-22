@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const BouncyCardsFeatures = () => {
   return (
@@ -14,7 +15,9 @@ export const BouncyCardsFeatures = () => {
           whileTap={{ scale: 0.95 }}
           className="whitespace-nowrap rounded-lg bg-white/40 px-4 py-2 font-medium text-white transition-colors hover:bg-white/20"
         >
+          <Link href="https://wa.me/6282334039853">
           Info Lebih Lanjut
+          </Link>
         </motion.button>
       </div>
       <div className="mb-4 grid grid-cols-12 gap-4">
