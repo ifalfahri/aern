@@ -5,6 +5,7 @@ import { Navbar } from "@/components/navbar";
 import ShuffleHero from "@/components/shuffle-hero";
 import { useEffect, useState } from "react";
 import { BouncyCardsFeatures } from "@/components/bouncy-cards-features";
+import { TextParallax } from "@/components/text-parallax";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,12 +20,13 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-[#ff8dd3]">
+    <div className="bg-secondary">
       <Navbar />
       <div className="bg-[url('https://res.cloudinary.com/dyjxcujz4/image/upload/v1717142252/layered-waves-haikei_7_olvnqc.svg')] bg-cover">
       <ShuffleHero />
       </div>
       <BouncyCardsFeatures />
+      <TextParallax />
     </div>
   );
 }
