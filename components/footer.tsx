@@ -32,7 +32,7 @@ export function Footer() {
             </a>
           </div>
           <p className="text-sm text-white">
-            © {new Date().getFullYear()} AernStore. Website oleh <a href="github.com/ifalfahri" className="hover:text-pink-600 transition-colors">ifalfahri</a>
+            © {new Date().getFullYear()} AernStore. Website oleh <a href="https://ifal.me" className="hover:text-pink-600 transition-colors">ifalfahri</a>
           </p>
         </div>
       </div>
