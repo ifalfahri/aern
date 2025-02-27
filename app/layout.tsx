@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "AernStore",
-  description: "AernStore merupakan sebuah website dari toko online yang menjual berbagai macam barang dengan harga terjangkau dengan mottonya #SahabatBelanjaHemat.",
+  title: "Aern Store",
+  description: "Aern Store merupakan sebuah website dari toko online yang menjual berbagai macam barang dengan harga terjangkau dengan mottonya #SahabatBelanjaHemat. Berlokasi di Sulawesi Tengah, Indonesia",
 };
 
 export default function RootLayout({
