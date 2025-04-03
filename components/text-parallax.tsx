@@ -130,7 +130,7 @@ const Content = () => (
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
       Nikmati pengalaman berbelanja yang berbeda, dengan harga bersahabat, produk lengkap, dan pelayanan ramah yang akan membuat Anda kembali lagi dan lagi. Karena di Aern Store, kepuasan Anda adalah prioritas utama kami.
       </p>
-      <button className="w-full rounded bg-secondary px-9 py-4 text-xl text-white transition-colors hover:bg-secondary/70 md:w-fit">
+      <button className="w-full rounded-md bg-secondary px-9 py-4 text-xl text-white transition-colors hover:bg-secondary/70 md:w-fit">
         Jelajahi Sekarang <FiArrowUpRight className="inline" />
       </button>
     </div>
@@ -139,7 +139,7 @@ const Content = () => (
 
 const Content2 = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
+    <h2 className="col-span-1 text-3xl font-bold text-primary md:col-span-4">
     Komitmen Kami
     </h2>
     <div className="col-span-1 md:col-span-8">
@@ -149,7 +149,7 @@ const Content2 = () => (
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
       Pengalaman belanja yang menyenangkan, pelayanan prima, dan kepuasan pelanggan adalah tiga pilar yang menjadi landasan setiap langkah kami. Karena kesuksesan Aern Store adalah ketika Anda tersenyum puas setelah berbelanja.
       </p>
-      <button className="w-full rounded bg-secondary px-9 py-4 text-xl text-white transition-colors hover:bg-secondary/70 md:w-fit">
+      <button className="w-full rounded-md bg-secondary px-9 py-4 text-xl text-white transition-colors hover:bg-secondary/70 md:w-fit">
         Jelajahi Sekarang <FiArrowUpRight className="inline" />
       </button>
     </div>
