@@ -25,7 +25,7 @@ export default function FeedbackLayout({
   return (
     <div className="min-h-screen bg-[url('https://res.cloudinary.com/dyjxcujz4/image/upload/v1717142252/layered-waves-haikei_7_olvnqc.svg')] bg-cover">
       <main className="container mx-auto flex flex-col items-center justify-center py-6">
-        <Link href="">
+        <Link href="/">
         <Aernime className="h-24 mt-2 mb-8" />
         </Link>
         <FeedbackTabs>{children}</FeedbackTabs>
