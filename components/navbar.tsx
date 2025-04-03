@@ -2,45 +2,56 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import AernStoreLogo from "./icons/aernstore";
 
 export function Navbar() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  // Use useCallback to memoize the scroll handler
+  const handleScroll = useCallback(() => {
+    const currentScrollPos = window.scrollY;
+
+    // Show navbar when scrolling up or at the very top
+    const visible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
+
+    setIsVisible(visible);
+    setPrevScrollPos(currentScrollPos);
+
+    // Set scrolled state for appearance
+    setIsScrolled(currentScrollPos > 10);
+  }, [prevScrollPos]);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+    // Set initial scroll position
+    setPrevScrollPos(window.scrollY);
 
     // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
-    
-    // Initial check
-    handleScroll();
 
     // Cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   if (pathname?.startsWith("/feedback")) {
     return null;
   }
 
   return (
-    <nav 
+    <nav
       className={`fixed w-full z-20 top-0 start-0 border-b transition-all duration-300 
-      ${isScrolled 
-        ? "bg-white/90 dark:bg-gray-900/70 backdrop-blur-md border-gray-200/50 dark:border-gray-600/50" 
-        : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-600"}`}
+      ${isVisible ? "translate-y-0" : "-translate-y-full"}
+      ${
+        isScrolled
+          ? "bg-white/90 dark:bg-gray-900/70 backdrop-blur-md border-gray-200/50 dark:border-gray-600/50"
+          : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-600"
+      }`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center w-10 h-10 space-x-3">
@@ -86,11 +97,15 @@ export function Navbar() {
           }`}
           id="navbar-sticky"
         >
-          <ul className={`flex flex-col p-4 md:p-0 mt-4 font-normal border rounded-lg 
-            ${isScrolled 
-              ? "border-gray-100/80 bg-gray-50/80 md:bg-transparent" 
-              : "border-gray-100 bg-gray-50 md:bg-white"}
-            md:space-x-8 md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700`}>
+          <ul
+            className={`flex flex-col p-4 md:p-0 mt-4 font-normal border rounded-lg 
+            ${
+              isScrolled
+                ? "border-gray-100/80 bg-gray-50/80 md:bg-transparent"
+                : "border-gray-100 bg-gray-50 md:bg-white"
+            }
+            md:space-x-8 md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700`}
+          >
             <li>
               <Link
                 href="#home"
