@@ -1,12 +1,12 @@
 "use client";
 
+import { BouncyCardsFeatures } from "@/components/bouncy-cards-features";
 import { LoadingScreen } from "@/components/loading-screen";
+import { MainFooter } from "@/components/main-footer";
 import { Navbar } from "@/components/navbar";
 import ShuffleHero from "@/components/shuffle-hero";
-import { useEffect, useState } from "react";
-import { BouncyCardsFeatures } from "@/components/bouncy-cards-features";
 import { TextParallax } from "@/components/text-parallax";
-import { MainFooter } from "@/components/main-footer";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
