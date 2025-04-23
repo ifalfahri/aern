@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const BouncyCardsFeatures = () => {
   return (
-    <section className="bg-gradient-to-b from-secondary to-zinc-100">
+    <section id="features" className="bg-gradient-to-b from-secondary to-zinc-100">
     <div className="mx-auto max-w-7xl px-4 py-12">
       <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
         <h2 className="max-w-2xl text-4xl text-primary-foreground font-bold md:text-5xl">
