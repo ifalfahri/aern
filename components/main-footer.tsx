@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export function MainFooter() {
   return (
-    <footer className="bg-gradient-to-b from-secondary/20 to-secondary/40 text-gray-800">
+    <footer className="bg-white text-gray-800">
       <div className="container mx-auto max-w-6xl px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
@@ -90,7 +90,6 @@ export function MainFooter() {
                 <FaWhatsapp size={24} />
               </Link>
             </div>
-            <p className="text-gray-700">WhatsApp: 082334039853</p>
           </div>
         </div>
 
