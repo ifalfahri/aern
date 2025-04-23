@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 export const TextParallax = () => {
   return (
-    <div className="bg-zinc-100">
+    <section id="about" className="bg-zinc-50">
       <TextParallaxContent
         imgUrl="https://res.cloudinary.com/dyjxcujz4/image/upload/a_-90/c_crop,w_1600,h_960,x_0,y_0/v1745376146/aern/1a8bae8c-f711-4db2-8b88-d8423e0056e8_tain31.jpg"
         subheading="Aern Store"
@@ -19,7 +19,7 @@ export const TextParallax = () => {
       >
         <Content2 />
       </TextParallaxContent>
-    </div>
+    </section>
   );
 };
 
@@ -124,13 +124,13 @@ const Content = () => (
       Kenapa Aern Store?
     </h2>
     <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-4 text-lg text-neutral-600 md:text-xl">
       Aern Store hadir sebagai solusi belanja modern yang mengedepankan kenyamanan dan kepuasan pelanggan. Dengan koleksi produk berkualitas dan layanan prima, kami berkomitmen menjadi partner terpercaya untuk memenuhi kebutuhan sehari-hari keluarga anda.
       </p>
-      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-8 text-lg text-neutral-600 md:text-xl">
       Nikmati pengalaman berbelanja yang berbeda, dengan harga bersahabat, produk lengkap, dan pelayanan ramah yang akan membuat Anda kembali lagi dan lagi. Karena di Aern Store, kepuasan Anda adalah prioritas utama kami.
       </p>
-      <button className="w-full rounded-md bg-secondary px-9 py-4 text-xl text-white transition-colors hover:bg-secondary/70 md:w-fit">
+      <button className="w-full rounded-md bg-secondary px-9 py-4 text-lg md:text-xl text-white transition-opacity hover:opacity-80 md:w-fit">
         Jelajahi Sekarang <FiArrowUpRight className="inline" />
       </button>
     </div>
@@ -143,13 +143,13 @@ const Content2 = () => (
     Komitmen Kami
     </h2>
     <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-4 text-lg text-neutral-600 md:text-xl">
       Kami percaya bahwa produk berkualitas tinggi seharusnya dapat diakses oleh semua kalangan. Itulah mengapa Aern Store menjalin kemitraan langsung dengan produsen terpercaya untuk menghilangkan biaya yang tak perlu dan memberikan nilai lebih kepada pelanggan.
       </p>
-      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-8 text-lg text-neutral-600 md:text-xl">
       Pengalaman belanja yang menyenangkan, pelayanan prima, dan kepuasan pelanggan adalah tiga pilar yang menjadi landasan setiap langkah kami. Karena kesuksesan Aern Store adalah ketika Anda tersenyum puas setelah berbelanja.
       </p>
-      <button className="w-full rounded-md bg-secondary px-9 py-4 text-xl text-white transition-colors hover:bg-secondary/70 md:w-fit">
+      <button className="w-full rounded-md bg-secondary px-9 py-4 text-lg md:text-xl text-white transition-opacity hover:opacity-80 md:w-fit">
         Jelajahi Sekarang <FiArrowUpRight className="inline" />
       </button>
     </div>
