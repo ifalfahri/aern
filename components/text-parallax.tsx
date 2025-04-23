@@ -6,14 +6,14 @@ export const TextParallax = () => {
   return (
     <div className="bg-zinc-100">
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imgUrl="https://res.cloudinary.com/dyjxcujz4/image/upload/a_-90/c_crop,w_1600,h_960,x_0,y_0/v1745376146/aern/1a8bae8c-f711-4db2-8b88-d8423e0056e8_tain31.jpg"
         subheading="Aern Store"
         heading="Hadir untuk Kita Semua"
       >
         <Content />
       </TextParallaxContent>
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imgUrl="https://res.cloudinary.com/dyjxcujz4/image/upload/a_-90/c_crop,w_3661,h_2268,x_0,y_0/v1745376214/aern/IMG_8848_sdjdwu.webp"
         subheading="#SahabatBelanjaHemat"
         heading="Kualitas Terbaik dengan Harga Terjangkau"
       >
