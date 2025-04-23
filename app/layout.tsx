@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     "e-commerce",
     "Aern Store",
     "Aern",
+    "aernstore",
+    "rena store",
     "#SahabatBelanjaHemat",
     "Toili",
     "Toili Barat",
