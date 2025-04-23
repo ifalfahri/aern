@@ -4,8 +4,8 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 export function MainFooter() {
   return (
     <footer className="bg-white text-gray-800">
-      <div className="container mx-auto max-w-6xl px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto max-w-6xl px-4 pt-12 pb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-20">
           {/* About Section */}
           <div>
             <h3 className="text-xl font-semibold mb-4 text-primary">
@@ -93,7 +93,7 @@ export function MainFooter() {
           </div>
         </div>
 
-        <div className="border-t border-gray-300 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-300 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-600 mb-4 md:mb-0">
             © {new Date().getFullYear()} Aern Store. Hak Cipta Dilindungi.
           </p>
