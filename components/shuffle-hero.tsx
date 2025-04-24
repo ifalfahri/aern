@@ -143,7 +143,7 @@ const ShuffleGrid = () => {
   }, [shuffleSquares]);
 
   return (
-    <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
+    <div className="hidden md:grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
       {squares}
     </div>
   );
