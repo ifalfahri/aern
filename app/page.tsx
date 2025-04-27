@@ -1,25 +1,12 @@
 "use client";
 
 import { BouncyCardsFeatures } from "@/components/bouncy-cards-features";
-import { LoadingScreen } from "@/components/loading-screen";
 import { MainFooter } from "@/components/main-footer";
 import { Navbar } from "@/components/navbar";
 import ShuffleHero from "@/components/shuffle-hero";
 import { TextParallax } from "@/components/text-parallax";
-import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 1500);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <LoadingScreen />;
-  }
-
   return (
     <div className="bg-secondary">
       <Navbar />

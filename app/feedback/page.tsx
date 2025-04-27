@@ -1,9 +1,28 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { Star, MessageSquare } from "lucide-react"
+import { LoadingScreen } from "@/components/loading-screen";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { MessageSquare, Star } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function FeedbackOverview() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
+
   return (
     <div className="space-y-6">
       <Card className="border-0 shadow-transparent">
@@ -21,7 +40,8 @@ export default function FeedbackOverview() {
                 Rating dan Pengaduan
               </CardTitle>
               <CardDescription>
-                Berikan penilaian dan keluh kesah anda agar kami dapat memperbaikinya.
+                Berikan penilaian dan keluh kesah anda agar kami dapat
+                memperbaikinya.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -36,9 +56,10 @@ export default function FeedbackOverview() {
                 <MessageSquare className="h-5 w-5 text-blue-500" />
                 Request Barang
               </CardTitle>
-                <CardDescription>
-                Beritahu kami barang apa yang kamu ingin kami sediakan di toko kami.
-                </CardDescription>
+              <CardDescription>
+                Beritahu kami barang apa yang kamu ingin kami sediakan di toko
+                kami.
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <Button asChild className="w-full">
@@ -49,5 +70,5 @@ export default function FeedbackOverview() {
         </CardContent>
       </Card>
     </div>
-  )
+  );
 }
