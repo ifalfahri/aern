@@ -1,3 +1,5 @@
+"use client";
+
 import { LoadingScreen } from "@/components/loading-screen";
 import { Button } from "@/components/ui/button";
 import {
