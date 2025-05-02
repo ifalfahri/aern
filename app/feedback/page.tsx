@@ -1,6 +1,5 @@
 "use client";
 
-import { LoadingScreen } from "@/components/loading-screen";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -11,19 +10,8 @@ import {
 } from "@/components/ui/card";
 import { MessageSquare, Star } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 export default function FeedbackOverview() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 1500);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <LoadingScreen />;
-  }
 
   return (
     <div className="space-y-6">
