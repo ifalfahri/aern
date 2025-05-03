@@ -11,7 +11,7 @@ export function Footer() {
               href="https://instagram.com/aernstore_"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-pink-400 transition-colors"
+              className="text-white hover:text-pink-100 transition-colors"
             >
               <FaInstagram size={24} />
             </Link>
@@ -19,7 +19,7 @@ export function Footer() {
               href="https://facebook.com/profile.php?id=100093138370890e"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-pink-400 transition-colors"
+              className="text-white hover:text-pink-100 transition-colors"
             >
               <FaFacebook size={24} />
             </Link>
@@ -27,7 +27,7 @@ export function Footer() {
               href="https://wa.me/6282334039853"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-pink-400 transition-colors"
+              className="text-white hover:text-pink-100 transition-colors"
             >
               <FaWhatsapp size={24} />
             </Link>
