@@ -1,3 +1,5 @@
+import AssistantWrapper from "@/components/assistant-wrapper";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
@@ -75,8 +77,12 @@ export default function RootLayout({
           data-website-id="95ff212a-1b5d-439f-b1ea-41d2af07bf2a"
           strategy="afterInteractive"
         />
-      </head>
-      <body>{children}</body>
+      </head>{" "}
+      <body>
+        <TooltipProvider>
+          <AssistantWrapper>{children}</AssistantWrapper>
+        </TooltipProvider>
+      </body>
     </html>
   );
 }
